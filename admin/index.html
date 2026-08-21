@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>简历后台管理</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <span>Resume Admin</span>
+          <h1>简历后台管理</h1>
+        </div>
+        <div class="admin-actions">
+          <span class="front-hint">前台地址以 npm run dev 输出为准</span>
+          <button id="saveButton" type="button">保存到前台配置</button>
+        </div>
+      </header>
+      <p class="admin-note" id="statusNote">后台会写入 ../public/resume-data.json，前台重新打包后会使用这些内容。</p>
+      <form id="adminForm" class="admin-form"></form>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
